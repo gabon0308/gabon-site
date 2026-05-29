@@ -26,14 +26,15 @@ a{text-decoration:none;color:inherit}
     radial-gradient(circle at 78% 45%,#6b4b32 0,#111 38%,#030303 72%);
 }
 .header{
-  height:86px;
+  height:60px;
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 .logo img{
-  height:300px;
+  height:260px;
   display:block;
+  transform:translateX(-90px);
 }
 .nav{
   display:flex;
@@ -208,10 +209,12 @@ footer{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  overflow:hidden;
 }
 .footer-logo img{
-  height:300px;
+  height:220px;
   display:block;
+  transform:translateX(-90px);
 }
 .copy{
   color:#aaa;
@@ -220,7 +223,10 @@ footer{
 
 @media(max-width:800px){
   .nav{display:none}
-  .logo img{height:36px}
+  .logo img{
+    height:90px;
+    transform:translateX(-30px);
+  }
   .hero{min-height:620px}
   .hero-content{padding-top:90px}
   .grid{grid-template-columns:1fr;gap:40px}
@@ -232,6 +238,10 @@ footer{
   }
   .footer-inner{display:block}
   .footer-logo{margin-bottom:20px}
+  .footer-logo img{
+    height:90px;
+    transform:translateX(-30px);
+  }
 }
 </style>
 </head>
@@ -332,7 +342,7 @@ footer{
     <p class="section-label">CONTACT</p>
     <h2>ご相談・お問い合わせ</h2>
     <p>映像制作・動画撮影・SNS広告運用に関するご相談はこちら。</p>
-    <a href="mailto:info@gabon.jp" class="button">問い合わせする <span>→</span></a>
+    <a href="mailto:info@gabon.jp" class="button">問い合わせ <span>→</span></a>
   </div>
 </section>
 
