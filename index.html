@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GABON | SNS広告運用・動画制作・動画撮影</title>
-<meta name="description" content="GABONは滋賀県東近江市を拠点に、SNS広告運用・動画制作・動画撮影を行っています。">
+<meta name="description" content="滋賀県東近江市を拠点に、SNS広告運用・動画制作・動画撮影を行っています。">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -21,8 +22,8 @@ a{text-decoration:none;color:inherit}
   min-height:720px;
   color:#fff;
   background:
-    linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.55),rgba(0,0,0,.25)),
-    radial-gradient(circle at 75% 45%,#6b4b32 0,#111 38%,#030303 70%);
+    linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.65),rgba(0,0,0,.3)),
+    radial-gradient(circle at 78% 45%,#6b4b32 0,#111 38%,#030303 72%);
 }
 .header{
   height:86px;
@@ -30,11 +31,9 @@ a{text-decoration:none;color:inherit}
   align-items:center;
   justify-content:space-between;
 }
-.logo{
-  font-family:cursive;
-  font-size:42px;
-  font-style:italic;
-  letter-spacing:-.08em;
+.logo img{
+  height:44px;
+  display:block;
 }
 .nav{
   display:flex;
@@ -57,7 +56,7 @@ a{text-decoration:none;color:inherit}
   margin-bottom:28px;
 }
 h1{
-  font-size:clamp(48px,7vw,84px);
+  font-size:clamp(50px,7vw,86px);
   line-height:1.25;
   margin-bottom:28px;
   letter-spacing:-.06em;
@@ -66,7 +65,7 @@ h1{
   font-size:18px;
   margin-bottom:44px;
 }
-.hero-button{
+.button{
   display:inline-flex;
   gap:28px;
   align-items:center;
@@ -96,7 +95,7 @@ h1{
   display:inline-block;
   width:54px;
   height:1px;
-  background:#111;
+  background:currentColor;
   margin-left:20px;
   vertical-align:middle;
 }
@@ -110,9 +109,6 @@ h1{
   font-weight:700;
   line-height:1.7;
   margin-bottom:24px;
-}
-.about p{
-  max-width:520px;
 }
 .photo{
   height:330px;
@@ -147,10 +143,10 @@ h1{
   background:linear-gradient(135deg,#222,#777);
 }
 .card:nth-child(1) .card-image{
-  background:linear-gradient(135deg,#0b0b0b,#4f3a2b,#111);
+  background:linear-gradient(135deg,#080808,#4b392d,#111);
 }
 .card:nth-child(2) .card-image{
-  background:linear-gradient(135deg,#111,#2c3e50,#111);
+  background:linear-gradient(135deg,#111,#26384a,#111);
 }
 .card:nth-child(3) .card-image{
   background:linear-gradient(135deg,#f1efe9,#999);
@@ -191,11 +187,15 @@ th{
 .contact{
   background:#030303;
   color:#fff;
-  padding:80px 0;
+  padding:90px 0;
 }
-.mail{
-  font-size:34px;
-  font-weight:800;
+.contact h2{
+  font-size:40px;
+  margin-bottom:18px;
+}
+.contact p{
+  color:#ccc;
+  margin-bottom:36px;
 }
 
 footer{
@@ -209,20 +209,27 @@ footer{
   justify-content:space-between;
   align-items:center;
 }
-.footer-logo{
-  font-family:cursive;
-  font-size:38px;
-  font-style:italic;
-  letter-spacing:-.08em;
+.footer-logo img{
+  height:42px;
+  display:block;
+}
+.copy{
+  color:#aaa;
+  font-size:13px;
 }
 
 @media(max-width:800px){
   .nav{display:none}
+  .logo img{height:36px}
   .hero{min-height:620px}
   .hero-content{padding-top:90px}
   .grid{grid-template-columns:1fr;gap:40px}
   .cards{grid-template-columns:1fr}
-  .card{border-right:none;border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:30px}
+  .card{
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.18);
+    padding-bottom:30px;
+  }
   .footer-inner{display:block}
   .footer-logo{margin-bottom:20px}
 }
@@ -234,7 +241,10 @@ footer{
 <section class="hero">
   <div class="container">
     <header class="header">
-      <div class="logo">Gabon</div>
+      <div class="logo">
+        <img src="logo.png" alt="GABON">
+      </div>
+
       <nav class="nav">
         <a href="#about">ABOUT</a>
         <a href="#service">SERVICE</a>
@@ -250,7 +260,7 @@ footer{
         必要な人へ届ける。<br>
         成果につながる情報発信を支援します。
       </p>
-      <a href="#contact" class="hero-button">お問い合わせはこちら <span>→</span></a>
+      <a href="#contact" class="button">お問い合わせはこちら <span>→</span></a>
     </div>
   </div>
 </section>
@@ -262,7 +272,7 @@ footer{
       <h2>伝えるだけでは、<br>変わらない。</h2>
       <p class="about-copy">
         映像をつくり、<br>
-        発信し、<br>
+        広告を運用し、<br>
         必要な人へ届ける。
       </p>
       <p>
@@ -311,10 +321,8 @@ footer{
     <table>
       <tr><th>屋号</th><td>GABON</td></tr>
       <tr><th>代表</th><td>山田 海人</td></tr>
-      <tr><th>事業形態</th><td>個人事業</td></tr>
       <tr><th>所在地</th><td>滋賀県東近江市</td></tr>
       <tr><th>事業内容</th><td>SNS広告運用・動画制作・動画撮影</td></tr>
-      <tr><th>メール</th><td>info@gabon.jp</td></tr>
     </table>
   </div>
 </section>
@@ -322,15 +330,18 @@ footer{
 <section id="contact" class="contact">
   <div class="container">
     <p class="section-label">CONTACT</p>
-    <p>ご相談・お問い合わせは、下記メールアドレスまでお願いいたします。</p>
-    <a class="mail" href="mailto:info@gabon.jp">info@gabon.jp</a>
+    <h2>ご相談・お問い合わせ</h2>
+    <p>映像制作・動画撮影・SNS広告運用に関するご相談はこちら。</p>
+    <a href="mailto:info@gabon.jp" class="button">お問い合わせする <span>→</span></a>
   </div>
 </section>
 
 <footer>
   <div class="container footer-inner">
-    <div class="footer-logo">Gabon</div>
-    <div>© GABON</div>
+    <div class="footer-logo">
+      <img src="logo.png" alt="GABON">
+    </div>
+    <div class="copy">© GABON</div>
   </div>
 </footer>
 
