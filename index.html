@@ -3,120 +3,312 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GABON</title>
-
+<title>GABON | 動画制作・動画撮影・SNS広告運用</title>
+<meta name="description" content="GABONは滋賀県東近江市を拠点に、動画制作・動画撮影・SNS広告運用を行っています。">
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-  max-width:1000px;
-  margin:0 auto;
-  padding:60px 20px;
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Noto Sans JP",sans-serif;
   color:#111;
+  background:#fff;
   line-height:1.8;
 }
-
-h1{
-  font-size:72px;
-  margin-bottom:10px;
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,90%);margin:auto}
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid #eee;
 }
-
-h2{
-  margin-top:80px;
-  color:#1a365d;
-  font-size:14px;
-  letter-spacing:2px;
-}
-
-.cards{
+.nav{
+  height:76px;
   display:flex;
-  gap:20px;
-  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
 }
-
+.logo{font-size:24px;font-weight:800;letter-spacing:.08em}
+nav{display:flex;gap:28px;font-size:13px;letter-spacing:.08em}
+.hero{
+  padding:110px 0 90px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:60px;
+  align-items:center;
+}
+.label{
+  color:#1a365d;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.14em;
+  margin-bottom:20px;
+}
+h1{
+  font-size:clamp(64px,10vw,130px);
+  line-height:.92;
+  letter-spacing:-.06em;
+  margin-bottom:32px;
+}
+.lead{
+  font-size:clamp(26px,4vw,44px);
+  line-height:1.35;
+  letter-spacing:-.04em;
+  margin-bottom:22px;
+}
+.desc{
+  color:#555;
+  max-width:560px;
+  font-size:16px;
+}
+.hero-visual{
+  min-height:420px;
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255,255,255,.95), transparent 28%),
+    linear-gradient(135deg,#0b1220,#1a365d 45%,#d7dde7);
+  position:relative;
+  overflow:hidden;
+}
+.hero-visual:before{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:50%;
+  right:42px;
+  top:46px;
+}
+.hero-visual:after{
+  content:"";
+  position:absolute;
+  inset:auto 38px 38px 38px;
+  height:120px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:22px;
+  backdrop-filter:blur(8px);
+}
+section{padding:90px 0}
+.section-title{
+  font-size:13px;
+  color:#1a365d;
+  font-weight:800;
+  letter-spacing:.18em;
+  margin-bottom:28px;
+}
+.about-text{
+  max-width:760px;
+  font-size:22px;
+  line-height:2;
+  letter-spacing:-.03em;
+}
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
 .card{
-  border:1px solid #eee;
-  padding:20px;
-  flex:1;
-  min-width:250px;
+  border:1px solid #e9e9e9;
+  border-radius:22px;
+  padding:34px;
+  background:#fff;
 }
-
+.card span{
+  display:block;
+  color:#1a365d;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.16em;
+  margin-bottom:18px;
+}
+.card h3{
+  font-size:24px;
+  margin-bottom:18px;
+}
+.card ul{
+  list-style:none;
+  color:#555;
+}
+.card li{
+  padding:5px 0;
+}
+.profile{
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
 table{
   width:100%;
+  max-width:760px;
+  border-collapse:collapse;
 }
-
-td,th{
-  padding:10px 0;
+th,td{
+  padding:18px 0;
+  border-bottom:1px solid #eee;
   text-align:left;
 }
+th{
+  width:150px;
+  color:#666;
+  font-weight:500;
+}
+.contact-box{
+  background:#f6f8fb;
+  border-radius:28px;
+  padding:46px;
+}
+.contact-box p{
+  color:#555;
+  margin-bottom:20px;
+}
+.mail{
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:-.03em;
+}
+footer{
+  padding:34px 0;
+  color:#777;
+  border-top:1px solid #eee;
+  font-size:13px;
+}
+@media(max-width:800px){
+  nav{display:none}
+  .hero{padding:80px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-visual{min-height:300px;border-radius:22px}
+  .about-text{font-size:18px}
+  .services{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .contact-box{padding:32px}
+  .mail{font-size:22px}
+}
 </style>
-
 </head>
+
 <body>
 
-<h1>GABON</h1>
+<header>
+  <div class="container nav">
+    <div class="logo">GABON</div>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#service">SERVICE</a>
+      <a href="#profile">PROFILE</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
 
-<p>動画制作・動画撮影・SNS広告運用</p>
+<main>
 
-<p>
-事業の魅力を伝え、適切なユーザーへ届ける。
-</p>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="label">VIDEO / SNS ADVERTISING</p>
+      <h1>GABON</h1>
+      <p class="lead">事業の魅力を伝え、<br>適切なユーザーへ届ける。</p>
+      <p class="desc">
+        GABONは滋賀県東近江市を拠点に、動画制作・動画撮影・SNS広告運用を行っています。
+        映像制作から広告運用まで一貫してサポートします。
+      </p>
+    </div>
+    <div class="hero-visual" aria-label="abstract video production visual"></div>
+  </div>
+</section>
 
-<h2>ABOUT</h2>
+<section id="about">
+  <div class="container">
+    <p class="section-title">ABOUT</p>
+    <p class="about-text">
+      動画をつくるだけでなく、誰に、どのように届けるかまで考える。
+      GABONは、クリエイティブと広告運用の両面から、事業者の情報発信と集客を支援します。
+    </p>
+  </div>
+</section>
 
-<p>
-GABONは動画制作・動画撮影・SNS広告運用を通じて、
-事業者の情報発信と集客を支援しています。
-</p>
+<section id="service">
+  <div class="container">
+    <p class="section-title">SERVICE</p>
+    <div class="services">
+      <div class="card">
+        <span>01</span>
+        <h3>SNS広告運用</h3>
+        <ul>
+          <li>Instagram広告</li>
+          <li>Facebook広告</li>
+          <li>TikTok広告</li>
+          <li>YouTube広告</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span>02</span>
+        <h3>動画制作</h3>
+        <ul>
+          <li>PR動画</li>
+          <li>採用動画</li>
+          <li>SNS向け動画</li>
+          <li>商品紹介動画</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span>03</span>
+        <h3>動画撮影</h3>
+        <ul>
+          <li>企業撮影</li>
+          <li>イベント撮影</li>
+          <li>インタビュー撮影</li>
+          <li>商品撮影</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2>SERVICE</h2>
+<section id="profile" class="profile">
+  <div class="container">
+    <p class="section-title">PROFILE</p>
+    <table>
+      <tr>
+        <th>屋号</th>
+        <td>GABON</td>
+      </tr>
+      <tr>
+        <th>事業形態</th>
+        <td>個人事業</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>滋賀県東近江市</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>SNS広告運用・動画制作・動画撮影</td>
+      </tr>
+    </table>
+  </div>
+</section>
 
-<div class="cards">
+<section id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <p class="section-title">CONTACT</p>
+      <p>ご相談・お問い合わせは、下記メールアドレスまでお願いいたします。</p>
+      <a class="mail" href="mailto:info@gabon.jp">info@gabon.jp</a>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-<h3>SNS広告運用</h3>
-Instagram広告<br>
-Facebook広告<br>
-TikTok広告<br>
-YouTube広告
-</div>
+</main>
 
-<div class="card">
-<h3>動画制作</h3>
-PR動画<br>
-採用動画<br>
-SNS動画<br>
-商品紹介動画
-</div>
-
-<div class="card">
-<h3>動画撮影</h3>
-企業撮影<br>
-イベント撮影<br>
-インタビュー撮影<br>
-商品撮影
-</div>
-
-</div>
-
-<h2>PROFILE</h2>
-
-<table>
-<tr>
-<th>屋号</th>
-<td>GABON</td>
-</tr>
-
-<tr>
-<th>事業形態</th>
-<td>個人事業</td>
-</tr>
-
-<tr>
-<th>所在地</th>
-<td>滋賀県</td>
-</tr>
-
-</table>
+<footer>
+  <div class="container">© GABON</div>
+</footer>
 
 </body>
 </html>
