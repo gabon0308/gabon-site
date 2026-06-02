@@ -22,8 +22,15 @@ a{text-decoration:none;color:inherit}
   min-height:720px;
   color:#fff;
   background:
-    linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.65),rgba(0,0,0,.3)),
-    radial-gradient(circle at 78% 45%,#6b4b32 0,#111 38%,#030303 72%);
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.82),
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.12)
+    ),
+    url("hero.png");
+  background-size:cover;
+  background-position:center;
 }
 .header{
   height:60px;
@@ -64,7 +71,6 @@ h1{
 }
 .hero-text{
   font-size:18px;
-  margin-bottom:44px;
 }
 .button{
   display:inline-flex;
@@ -113,7 +119,9 @@ h1{
 }
 .photo{
   height:330px;
-  background:linear-gradient(135deg,#111,#d7a35d);
+  background:url("about.png");
+  background-size:cover;
+  background-position:center;
 }
 
 .service{
@@ -138,23 +146,69 @@ h1{
   border-right:1px solid rgba(255,255,255,.18);
   padding-right:28px;
 }
-.card-image{
-  height:155px;
-  margin-bottom:22px;
-  background:linear-gradient(135deg,#222,#777);
+.icon{
+  width:70px;
+  height:70px;
+  border:1px solid #c8a968;
+  border-radius:50%;
+  margin-bottom:26px;
+  position:relative;
 }
-.card:nth-child(1) .card-image{
-  background:linear-gradient(135deg,#080808,#4b392d,#111);
+.icon:before,
+.icon:after{
+  content:"";
+  position:absolute;
+  background:#c8a968;
 }
-.card:nth-child(2) .card-image{
-  background:linear-gradient(135deg,#111,#26384a,#111);
+.icon-camera:before{
+  width:34px;
+  height:22px;
+  left:17px;
+  top:25px;
+  border:2px solid #c8a968;
+  background:transparent;
 }
-.card:nth-child(3) .card-image{
-  background:linear-gradient(135deg,#f1efe9,#999);
+.icon-camera:after{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  left:30px;
+  top:31px;
+}
+.icon-edit:before{
+  width:34px;
+  height:24px;
+  left:18px;
+  top:20px;
+  border:2px solid #c8a968;
+  background:transparent;
+}
+.icon-edit:after{
+  width:24px;
+  height:2px;
+  left:23px;
+  top:50px;
+}
+.icon-ads:before{
+  width:32px;
+  height:24px;
+  left:19px;
+  top:26px;
+  border-left:2px solid #c8a968;
+  border-bottom:2px solid #c8a968;
+  background:transparent;
+}
+.icon-ads:after{
+  width:30px;
+  height:2px;
+  left:22px;
+  top:34px;
+  transform:rotate(-25deg);
 }
 .num{
   font-size:22px;
   margin-bottom:6px;
+  color:#c8a968;
 }
 .card h3{
   font-size:26px;
@@ -231,7 +285,10 @@ footer{
     height:90px;
     transform:translateX(-30px);
   }
-  .hero{min-height:620px}
+  .hero{
+    min-height:620px;
+    background-position:center;
+  }
   .hero-content{padding-top:90px}
   .grid{grid-template-columns:1fr;gap:40px}
   .cards{grid-template-columns:1fr}
@@ -275,9 +332,6 @@ footer{
         必要な人へ届ける。<br>
         成果につながる情報発信を支援します。
       </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPzHBzAus7o-Gdv1UuZZYu8QaXfn2I1LfHSnG6u5Dbx6CaMg/viewform"
-         target="_blank"
-         class="button">お問い合わせはこちら <span>→</span></a>
     </div>
   </div>
 </section>
@@ -309,21 +363,21 @@ footer{
 
     <div class="cards">
       <div class="card">
-        <div class="card-image"></div>
+        <div class="icon icon-camera"></div>
         <p class="num">01</p>
         <h3>動画撮影</h3>
         <p>高品質な撮影技術で、魅力を最大限に引き出します。</p>
       </div>
 
       <div class="card">
-        <div class="card-image"></div>
+        <div class="icon icon-edit"></div>
         <p class="num">02</p>
         <h3>動画制作</h3>
         <p>目的に合わせた企画・構成で、成果につながる動画を制作します。</p>
       </div>
 
       <div class="card">
-        <div class="card-image"></div>
+        <div class="icon icon-ads"></div>
         <p class="num">03</p>
         <h3>SNS広告運用</h3>
         <p>ターゲットに最適化した広告運用で、成果を最大化します。</p>
