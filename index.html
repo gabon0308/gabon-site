@@ -22,12 +22,7 @@ a{text-decoration:none;color:inherit}
   min-height:720px;
   color:#fff;
   background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.82),
-      rgba(0,0,0,.45),
-      rgba(0,0,0,.12)
-    ),
+    linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.45),rgba(0,0,0,.12)),
     url("hero.png");
   background-size:cover;
   background-position:center;
@@ -55,9 +50,7 @@ a{text-decoration:none;color:inherit}
   border:1px solid rgba(255,255,255,.7);
   padding:12px 22px;
 }
-.hero-content{
-  padding-top:135px;
-}
+.hero-content{padding-top:135px}
 .kicker{
   font-size:15px;
   font-weight:700;
@@ -69,9 +62,7 @@ h1{
   margin-bottom:28px;
   letter-spacing:-.06em;
 }
-.hero-text{
-  font-size:18px;
-}
+.hero-text{font-size:18px}
 .button{
   display:inline-flex;
   gap:28px;
@@ -82,9 +73,7 @@ h1{
   font-weight:700;
 }
 
-.about{
-  padding:90px 0;
-}
+.about{padding:90px 0}
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -146,64 +135,12 @@ h1{
   border-right:1px solid rgba(255,255,255,.18);
   padding-right:28px;
 }
-.icon{
-  width:70px;
-  height:70px;
-  border:1px solid #c8a968;
-  border-radius:50%;
-  margin-bottom:26px;
-  position:relative;
-}
-.icon:before,
-.icon:after{
-  content:"";
-  position:absolute;
-  background:#c8a968;
-}
-.icon-camera:before{
-  width:34px;
-  height:22px;
-  left:17px;
-  top:25px;
-  border:2px solid #c8a968;
-  background:transparent;
-}
-.icon-camera:after{
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  left:30px;
-  top:31px;
-}
-.icon-edit:before{
-  width:34px;
-  height:24px;
-  left:18px;
-  top:20px;
-  border:2px solid #c8a968;
-  background:transparent;
-}
-.icon-edit:after{
-  width:24px;
-  height:2px;
-  left:23px;
-  top:50px;
-}
-.icon-ads:before{
-  width:32px;
-  height:24px;
-  left:19px;
-  top:26px;
-  border-left:2px solid #c8a968;
-  border-bottom:2px solid #c8a968;
-  background:transparent;
-}
-.icon-ads:after{
-  width:30px;
-  height:2px;
-  left:22px;
-  top:34px;
-  transform:rotate(-25deg);
+.service-icon{
+  width:88px;
+  height:88px;
+  object-fit:contain;
+  display:block;
+  margin-bottom:28px;
 }
 .num{
   font-size:22px;
@@ -275,9 +212,7 @@ footer{
   font-size:13px;
   text-align:right;
 }
-.copy a{
-  color:#aaa;
-}
+.copy a{color:#aaa}
 
 @media(max-width:800px){
   .nav{display:none}
@@ -296,6 +231,10 @@ footer{
     border-right:none;
     border-bottom:1px solid rgba(255,255,255,.18);
     padding-bottom:30px;
+  }
+  .service-icon{
+    width:76px;
+    height:76px;
   }
   .footer-inner{display:block}
   .footer-logo{margin-bottom:20px}
@@ -363,21 +302,21 @@ footer{
 
     <div class="cards">
       <div class="card">
-        <div class="icon icon-camera"></div>
+        <img src="camera.png" alt="動画撮影" class="service-icon">
         <p class="num">01</p>
         <h3>動画撮影</h3>
         <p>高品質な撮影技術で、魅力を最大限に引き出します。</p>
       </div>
 
       <div class="card">
-        <div class="icon icon-edit"></div>
+        <img src="edit.png" alt="動画制作" class="service-icon">
         <p class="num">02</p>
         <h3>動画制作</h3>
         <p>目的に合わせた企画・構成で、成果につながる動画を制作します。</p>
       </div>
 
       <div class="card">
-        <div class="icon icon-ads"></div>
+        <img src="ads.png" alt="SNS広告運用" class="service-icon">
         <p class="num">03</p>
         <h3>SNS広告運用</h3>
         <p>ターゲットに最適化した広告運用で、成果を最大化します。</p>
