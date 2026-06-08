@@ -222,33 +222,82 @@ footer{
 
 @media(max-width:800px){
   .nav{display:none}
-  .logo img{
-    height:90px;
-    transform:translateX(-30px);
-  }
+
   .hero{
-    min-height:620px;
-    background-position:center;
+    min-height:720px;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,.50),
+        rgba(0,0,0,.18),
+        rgba(0,0,0,.05)
+      ),
+      url("hero.png");
+    background-size:cover;
+    background-position:70% center;
   }
-  .hero-content{padding-top:90px}
-  .grid{grid-template-columns:1fr;gap:40px}
-  .cards{grid-template-columns:1fr}
+
+  .header{
+    height:90px;
+  }
+
+  .logo img{
+    height:74px;
+    transform:translate(-18px, 10px);
+  }
+
+  .hero-content{
+    padding-top:190px;
+  }
+
+  h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:26px;
+    letter-spacing:-.06em;
+  }
+
+  .hero-text{
+    font-size:18px;
+    line-height:1.9;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
   .card{
     border-right:none;
     border-bottom:1px solid rgba(255,255,255,.18);
     padding-bottom:30px;
   }
+
   .service-icon{
     width:140px;
     height:140px;
   }
-  .footer-inner{display:block}
-  .footer-logo{margin-bottom:20px}
+
+  .footer-inner{
+    display:block;
+  }
+
+  .footer-logo{
+    margin-bottom:20px;
+  }
+
   .footer-logo img{
     height:90px;
     transform:translateX(-30px);
   }
-  .copy{text-align:left}
+
+  .copy{
+    text-align:left;
+  }
 }
 </style>
 </head>
